@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>ReUse</h1>
+    <p class="lead">
+        ReUse is a web application for participating Corvallis area businesses
+        to add and change ReUse application categories, items and businesses.
+    </p>
+    <!--<p><a href="http://flask.pocoo.org/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>-->
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>Business</h2>
+        <p>
+            Add new ReUse businesses.
+        </p>
+        <p><a class="btn btn-info" href="{{ url_for('business') }}">Business &raquo;</a></p>
+    </div>
+
+    <div class="col-md-3">
+        <h2>New</h2>
+        <p>Add new items or categories.</p>
+        <p><a class="btn btn-info" href="{{ url_for('new') }}">New &raquo;</a></p>
+    </div>
+    <div class="col-md-3">
+        <h2>Edit </h2>
+        <p>Update or change items or categories. </p>
+        <p><a class="btn btn-info" href="{{ url_for('edit') }}">Edit &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
